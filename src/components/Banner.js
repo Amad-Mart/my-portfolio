@@ -12,11 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Software Engineer", "Full-Stack Developer" ];
-<<<<<<< HEAD
-  const period = 1000; //controls speed letters get typed
-=======
-  const period = 1000; //
->>>>>>> a670c6f88a77b1186b0ceada26ccb93ec0c2110f
+  const period = 1000; //Controls typing speed
 
   useEffect(() => {
     let ticker = setInterval(() => {
