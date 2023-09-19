@@ -12,7 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Software Engineer", "Full-Stack Developer" ];
-  const period = 1000; //Controls typing speed
+  const period = 1000; //determines time between each toRotate word
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +41,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(100);
+      setDelta(100); //controls how fast one letter comes after another
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
