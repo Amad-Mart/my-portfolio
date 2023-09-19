@@ -29,7 +29,7 @@ export const NavBar = () => {
   }  
   
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" />
@@ -42,23 +42,18 @@ export const NavBar = () => {
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#link" className={activeLink === 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
+          </Nav>
             <span className="navbar-text">
-              <div className="social-icon0">
-                <a href="#home">
-                  <img src={navIcon1} alt="" />
-                </a>
-                <a href="#home">
-                  <img src={navIcon2} alt="" />
-                </a>
-                <a href="#home">
-                  <img src={navIcon3} alt="" />
-                </a>
+            <div className="social-icon">
+                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
               <button className="vvd" onClick={() => console.log("connect")}>
                 <span>Let's Connect</span>
               </button>
             </span>
-          </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
