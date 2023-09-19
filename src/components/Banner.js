@@ -14,7 +14,7 @@ export const Banner = () => {
   const toRotate = [ "Web Developer", "Software Engineer", "Full-Stack Developer" ];
   const period = 1000; //determines time between each toRotate word
 
-  useEffect(() => {
+  useEffect(() => { 
     let ticker = setInterval(() => {
       tick();
     }, delta);
